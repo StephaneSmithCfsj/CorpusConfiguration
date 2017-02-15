@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.1.1602.1, Culture=neutral, PublicKeyToken=3751622786b357c2" >
+
+  </pnp:Preferences>
+  <pnp:Templates ID="CFSJ-PeopleSearch-FILES">
+    <pnp:ProvisioningTemplate ID="PeopleSearch-FILES" Version="1">
+      <pnp:Files>
+         <!-- App Files  -->
+        <pnp:File Src="..\app\_EmployeeDirectory\css\EmployeeDirectory.css"                                   Folder="{site}/_catalogs/masterpage/_EmployeeDirectory/Display Templates/css"    Overwrite="true" Level="Published"/>
+        <pnp:File Src="..\app\_EmployeeDirectory\Display Templates\Search\Control_SearchResults_Table.html"   Folder="{site}/_catalogs/masterpage/_EmployeeDirectory/Display Templates/Search" Overwrite="true"  Level="Published"/>
+        <pnp:File Src="..\app\_EmployeeDirectory\Display Templates\Search\Item_Person_Table.html"	            Folder="{site}/_catalogs/masterpage/_EmployeeDirectory/Display Templates/Search" Overwrite="true"  Level="Published"/>
+        <pnp:File Src="..\app\_EmployeeDirectory\Display Templates\Search\CFSJ_Bottin_Item_Person.html"	Folder="{site}/_catalogs/masterpage/_EmployeeDirectory/Display Templates/Search" Overwrite="true"   Level="Published"/>
+         <!-- Page Files  -->
+         <!-- <pnp:File Src="..\app\peopleresults.aspx  " Folder="{site}/Pages" Overwrite="true"  />  -->
+        
+
+      
+      </pnp:Files>     
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

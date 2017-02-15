@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.7.1609.3, Culture=neutral, PublicKeyToken=3751622786b357c2" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-FF3FB8756EBD4006AC274BC2B04ABC66">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-FF3FB8756EBD4006AC274BC2B04ABC66" Version="1" BaseSiteTemplate="STS#0">
+      <pnp:Lists>    
+        <pnp:ListInstance Title="LiensMDD" Description="Liste de liens utilisés par le Méga Menu" DocumentTemplate="" TemplateType="10060" Url="Lists/LiensMDD" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="5104eafb-5d8f-444b-a101-f37dde4f0e80" ContentTypesEnabled="true">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01001944F22BAB3445088973EBAD2ED300F8" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{99A77AC3-371B-4C9E-9BC4-6DEA9DBB3017}" DefaultView="TRUE" Type="HTML" DisplayName="Tous les éléments" Url="/MDD/Lists/LiensMDD/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/images/generic.png">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="MDDPosition" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="MDDLinkHidden" />
+                <FieldRef Name="MDDLinkNewWin" />
+                <FieldRef Name="MDDDisplayDesc" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="a4df9694-1370-45af-b507-a350b29bac45" Name="b3d9bd33a17b499f99300af5c7093892" Hidden="true" DisplayName="Secteur d'activité_0" />
+            <pnp:FieldRef ID="87106603-aa22-4608-b112-50664bede008" Name="MDDLinkUrl" DisplayName="Url" />
+            <pnp:FieldRef ID="88edddc7-83aa-41d3-8f95-ff4f2ba11092" Name="MDDLinkImage" DisplayName="Image" />
+            <pnp:FieldRef ID="ac76daa1-6583-43a7-b341-cfa54be07a32" Name="MDDCss" DisplayName="Link Css" />
+            <pnp:FieldRef ID="4506e10c-9c64-4706-b64b-0be56f0de0e9" Name="MDDPosition" DisplayName="Position" />
+            <pnp:FieldRef ID="0576722c-d54c-4a77-979b-8750d98c216f" Name="MDDDisplayDesc" DisplayName="Display Url Description" />
+            <pnp:FieldRef ID="e2da07a6-4c62-45a5-9b77-16e00943e1e2" Name="MDDLinkNewWin" DisplayName="Open link in new window" />
+            <pnp:FieldRef ID="922340b0-bf3d-4263-af26-a3dc73364f10" Name="MDDLinkHidden" DisplayName="Hidden" />
+            <pnp:FieldRef ID="b3d9bd33-a17b-499f-9930-0af5c7093892" Name="Secteur_x0020_d_x0027_activit_x0" DisplayName="Secteur d'activité" />
+          </pnp:FieldRefs>
+          <pnp:FieldDefaults>
+            <pnp:FieldDefault FieldName="Secteur_x0020_d_x0027_activit_x0">2;#Technologies de l?information|47b2d2aa-8d77-4f8c-bace-80a4b9ec21c4</pnp:FieldDefault>
+          </pnp:FieldDefaults>
+        </pnp:ListInstance>
+
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

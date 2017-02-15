@@ -1,0 +1,15 @@
+#http://portail.cfsj.qc.ca=http://%site%/Corporation
+#http://portail.cfsj.qc.ca/archives=http://%site%/DocArchive
+#http://portail.cfsj.qc.ca/direction_generale=http://%site%/DG
+#http://portail.cfsj.qc.ca/finances=http://%site%/finances
+#http://portail.cfsj.qc.ca/finances/approvisionnement=http://%site%/approvisionnement
+#http://portail.cfsj.qc.ca/restauration=http://%site%/OperationRestauration
+#http://portail.cfsj.qc.ca/restauration/hebergement=http://%site%/AccueilHebergement
+#http://portail.cfsj.qc.ca/restauration/serviceclient=http://%site%/ServiceClientele
+http://portail.cfsj.qc.ca/rh=http://%site%/RH
+#http://portail.cfsj.qc.ca/rh/Securite=http://%site%/Securite
+#http://portail.cfsj.qc.ca/service_projets=http://%site%/ServiceProjetEnvironnement
+#http://portail.cfsj.qc.ca/service_projets/assurance_qualite=http://%site%/QA
+#http://portail.cfsj.qc.ca/service_projets/Muse=http://%site%/MuseFSJ
+#http://portail.cfsj.qc.ca/services_techniques=http://%site%/ServiceTechnique
+http://portail.cfsj.qc.ca/services_techniques/ti=http://%site%/ti

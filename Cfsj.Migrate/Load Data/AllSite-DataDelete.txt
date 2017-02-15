@@ -1,0 +1,15 @@
+﻿#http://%site%/finances/approvisionnement=http://%site%/finances
+http://%site%/finances/TI=http://%site%/finances
+#http://%site%/services_techniques/TI=http://%site%/services_techniques
+#http://%site%/OperationRestauration/hebergement=http://%site%/OperationRestauration
+#http://%site%/OperationRestauration/serviceclient=http://%site%/OperationRestauration
+http://%site%/rh/Securite=http://%site%/RH
+#http://%site%/ServiceProjet/assurance_qualite=http://%site%/ServiceProjet
+#http://%site%/ServiceProjet/Muse=http://%site%/ServiceProjet
+#http://%site%/Corporation/Rh=http://%site%/Corporation
+#http://%site%/Corporation/archives=http://%site%/Corporation
+#http://%site%/Corporation/direction_generale=http://%site%/Corporation
+#http://%site%/Corporation/Finances=http://%site%/Corporation
+#http://%site%/Corporation/restauration=http://%site%/Corporation
+#http://%site%/Corporation/service_projets=http://%site%/Corporation
+#http://%site%/Corporation/services_techniques=http://%site%/Corporation

@@ -1,0 +1,155 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+   <head>
+      <title>CFSJ Botting élément  de personne</title>
+      <!--[if gte mso 9]>
+      <xml>
+         <mso:CustomDocumentProperties>
+            <mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+            <mso:MasterPageDescription msdt:dt="string">Affiche un résultat adapté pour une personne en mode tableau.</mso:MasterPageDescription>
+            <mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
+            <mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
+            <mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+            <mso:CrawlerXSLFile msdt:dt="string"></mso:CrawlerXSLFile>
+            <mso:ManagedPropertyMapping msdt:dt="string">'AboutMe':'AboutMe','AccountName':'AccountName','BaseOfficeLocation':'BaseOfficeLocation','Department':'Department','HitHighlightedProperties':'HitHighlightedProperties','Interests':'Interests','JobTitle':'JobTitle','LastModifiedTime':'LastModifiedTime','Memberships':'Memberships','PastProjects':'PastProjects','Path':'Path','PictureURL':'PictureURL','PreferredName':'PreferredName','Responsibilities':'Responsibilities','Schools':'Schools','ServiceApplicationID':'ServiceApplicationID','SipAddress':'SipAddress','Skills':'Skills','UserProfile_GUID':'UserProfile_GUID','MobilePhone':'MobilePhone','WorkPhone':'WorkPhone','WorkEmail':'WorkEmail','WorkId':'WorkId','YomiDisplayName':'YomiDisplayName'</mso:ManagedPropertyMapping>
+         </mso:CustomDocumentProperties>
+      </xml>
+      <![endif]-->
+   </head>
+   <body>
+      <div id="Item_Person">
+         <!--#_ 
+            if(!$isNull(ctx.CurrentItem) && !$isNull(ctx.ClientControl)){
+                var id = ctx.ClientControl.get_nextUniqueId();
+                var itemId = id + Srch.U.Ids.item;
+                var hoverId = id + Srch.U.Ids.hover;
+                $setResultItem(itemId, ctx.CurrentItem);
+                var container_id = id + "_peopleContainer";
+                var hhProps = Srch.U.createXMLDocument("<root>" + ctx.CurrentItem.HitHighlightedProperties + "</root>");
+                var encodedPath = $urlHtmlEncodeString(ctx.CurrentItem.Path);
+                var has_pn = !$isEmptyString(ctx.CurrentItem.PreferredName);
+                var has_sip = !$isEmptyString(ctx.CurrentItem.SipAddress);
+                var has_email = !$isEmptyString(ctx.CurrentItem.WorkEmail);
+                var has_jt = !$isEmptyString(ctx.CurrentItem.JobTitle);
+                var has_dp = !$isEmptyString(ctx.CurrentItem.Department);
+                var has_abme = !$isEmptyString(ctx.CurrentItem.AboutMe);
+                var has_resp = !$isEmptyString(ctx.CurrentItem.Responsibilities);
+                var has_pp = !$isEmptyString(ctx.CurrentItem.PastProjects);
+                var has_ski = !$isEmptyString(ctx.CurrentItem.Skills);
+                var has_sch = !$isEmptyString(ctx.CurrentItem.Schools);
+                var has_int = !$isEmptyString(ctx.CurrentItem.Interests);
+                var has_vlm = !$isEmptyString(ctx.CurrentItem.ProfileViewsLastMonth);
+                var has_vlw = !$isEmptyString(ctx.CurrentItem.ProfileViewsLastWeek);
+                var has_query = !$isEmptyString(ctx.CurrentItem.ProfileQueriesFoundYou); 
+                var isSelfSrch = (has_vlm == true || has_vlw == true || has_query == true);
+                var delimiter = "";
+                var userPersonaId = $htmlEncode(id) + "_peopleUserPersona";
+                var uSip = ctx.CurrentItem.SipAddress;
+                var uEmail = ctx.CurrentItem.WorkEmail;
+                var uName = ctx.CurrentItem.PreferredName;
+                var uPicUrl = ctx.CurrentItem.PictureURL;
+                  var hoverUrl = "~sitecollection/_catalogs/masterpage/Display Templates/Search/Item_Person_HoverPanel.js";
+            _#-->
+         <tr class="ms-srch-resultHover">
+            <td class="ms-vb2">
+               <div id="_#= $htmlEncode(hoverId) =#_" class="ms-srch-hover-outerContainer"></div>
+               <div id="UserPersona">
+                  <div id="_#= userPersonaId =#_"></div>
+               </div>
+            </td>
+            <td class="ms-vb2">
+               <div id="NameField">
+                  <!--#_ 
+                     var encodedName = (has_pn == true) ? $htmlEncode(ctx.CurrentItem.PreferredName) : $htmlEncode(ctx.CurrentItem.YomiDisplayName);
+                     var displayName = Srch.U.getSingleHHXMLNodeValue(hhProps, "preferredname");
+                     if ($isEmptyString(displayName)) { displayName = encodedName }
+                     _#-->
+                  <div id="NameValue" class="ms-srch-ellipsis ms-textLarge">
+                     <a clicktype="Result" id="NameFieldLink" href="_#= encodedPath =#_" title="_#= encodedName =#_">_#= displayName =#_</a>
+                  </div>
+               </div>
+            </td>
+            <td class="ms-vb2">
+               <div id="JobTitleField">
+                  <!--#_ 
+                     var encodedJtitle = $htmlEncode(ctx.CurrentItem.JobTitle);
+                     var displayJtitle = Srch.U.getSingleHHXMLNodeValue(hhProps, "jobtitle");
+                     if ($isEmptyString(displayJtitle)) { displayJtitle = encodedJtitle }
+                     _#--> 
+                  <div id="JobTitleValue" class="ms-srch-ellipsis" title="_#= encodedJtitle =#_"> _#= displayJtitle =#_ </div>
+               </div>
+            </td>
+            <td class="ms-vb2">
+               <div id="DepartmentField">
+                  <!--#_ 
+                     var encodedDept = $htmlEncode(ctx.CurrentItem.Department);
+                     var displayDept = Srch.U.getSingleHHXMLNodeValue(hhProps, "department");
+                     if ($isEmptyString(displayDept)) { displayDept = encodedDept }
+                     _#--> 
+                  <div id="DepartmentValue" class="ms-srch-ellipsis" title="_#= encodedDept =#_"> _#= displayDept =#_ </div>
+               </div>
+            </td>
+            <td class="ms-vb2">
+               <div id="WorkEmail">
+                  <!--#_ 
+                     var encodedWorkEmail = $htmlEncode(ctx.CurrentItem.WorkEmail);
+                     var displayWorkEmail = Srch.U.getSingleHHXMLNodeValue(hhProps, "WorkEmail");
+                     if ($isEmptyString(displayWorkEmail)) { displayWorkEmail = encodedWorkEmail }
+                     _#-->               
+                  <div id="WorkEmailValue" class="ms-srch-ellipsis" title="_#= encodedWorkEmail =#_"> 
+                     <a href="mailto:_#=displayWorkEmail=#_"> _#= displayWorkEmail =#_ </a>                                                     
+                  </div>
+               </div>
+            </td>
+            <td class="ms-vb2">
+               <div id="WorkPhoneField">
+                  <!--#_ 
+                     var encodedWorkPhone = $htmlEncode(ctx.CurrentItem.WorkPhone);
+                     var displayWorkPhone = Srch.U.getSingleHHXMLNodeValue(hhProps, "WorkPhone");
+                     if ($isEmptyString(displayWorkPhone)) { displayWorkPhone = encodedWorkPhone }
+                     _#-->               
+                  <div id="WorkPhoneValue" class="ms-srch-ellipsis" title="_#= encodedWorkPhone =#_"> _#= displayWorkPhone =#_ </div>
+               </div>
+            </td>
+            <td class="ms-vb2">
+               <div id="MobilePhoneField">
+                  <!--#_ 
+                     var encodedMobilePhone = $htmlEncode(ctx.CurrentItem.MobilePhone);
+                     var displayMobilePhone = Srch.U.getSingleHHXMLNodeValue(hhProps, "MobilePhone");
+                     if ($isEmptyString(displayMobilePhone)) { displayMobilePhone = encodedMobilePhone }
+                     _#-->               
+                  <div id="MobilePhoneValue" class="ms-srch-ellipsis" title="_#= encodedMobilePhone =#_"> _#= displayMobilePhone =#_ </div>
+               </div>
+            </td>
+            <td class="ms-vb2">
+               <div id="_#= $htmlEncode(itemId) =#_" name="Item"  onmouseover="EnsureScriptParams('SearchUI.js', 'HP.Init', event, '_#=$scriptEncode(itemId) =#_', '_#=$scriptEncode(hoverId) =#_', '_#=$scriptEncode(hoverUrl) =#_');" onmouseout="EnsureScriptParams('SearchUI.js', 'HP.Hide');">
+                  ...
+               </div>
+            </td>
+         </tr>
+         <!--#_
+            AddPostRenderCallback(ctx, function(){
+                EnsureScriptFunc("clienttemplates.js", "RenderUserFieldWorker", function() {
+                    var getUserPersona = function() {
+                        var renderCtx = new ContextInfo();
+                        renderCtx.Templates = {};
+                        renderCtx.Templates["Fields"] = {};
+                        var fieldSchemaData = { "PictureOnly":"1", "PictureSize": "Size_48px"};
+                        var listSchema = {"EffectivePresenceEnabled": "1", "PresenceAlt": Srch.Res.item_People_NoPresenceAvailable};
+                        var userData = {"title": uName, "email": uEmail, "picture": uPicUrl, "sip": uSip};
+                        var personaControlElement = document.getElementById(userPersonaId);
+                        if (!Srch.U.n(personaControlElement))
+                        {
+                            personaControlElement.innerHTML = RenderUserFieldWorker(renderCtx, fieldSchemaData, userData, listSchema);
+                        }
+                        if (typeof(ProcessImn) != "undefined") { ProcessImn(); }
+                    };
+                    getUserPersona();
+                });
+            });
+            _#-->                        
+         <!--#_ 
+            } 
+            _#-->
+      </div>
+   </body>
+</html>

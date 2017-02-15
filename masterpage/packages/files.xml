@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.1.1602.1, Culture=neutral, PublicKeyToken=3751622786b357c2" >
+
+  </pnp:Preferences>
+  <pnp:Templates ID="NEGOTIUM-MASTERPAGE-FILES">
+
+    <pnp:ProvisioningTemplate ID="MASTERPAGE-FILES" Version="1">
+
+      <pnp:Features>
+        <pnp:SiteFeatures>
+          <pnp:Feature ID="e995e28b-9ba8-4668-9933-cf5c146d7a9f" />
+          <pnp:Feature ID="5104eafb-5d8f-444b-a101-f37dde4f0e80" />
+          <pnp:Feature ID="f6924d36-2fa8-4f0b-b16d-06b7250180fa" />
+        </pnp:SiteFeatures>
+        <pnp:WebFeatures>
+          <pnp:Feature ID="94c94ca6-b32f-4da9-a9e3-1f3d343d7ecb" />
+          <pnp:Feature ID="d2b9ec23-526b-42c5-87b6-852bd83e0364" />
+          <pnp:Feature ID="00bfea71-4ea5-48d4-a4ad-7ea5c011abe5" />          
+        </pnp:WebFeatures>
+      </pnp:Features>
+      <pnp:Files>
+         <!-- App Files  -->
+        <pnp:File Src="..\app\assets\app.css" Folder="{site}/_catalogs/masterpage/FSJ/assets" Overwrite="true" />
+        <pnp:File Src="..\app\assets\app.js" Folder="{site}/_catalogs/masterpage/FSJ/assets" Overwrite="true" />
+        <pnp:File Src="..\app\assets\images\favicon.ico" Folder="{site}/_catalogs/masterpage/FSJ/assets/images" Overwrite="true" />
+        <pnp:File Src="..\app\assets\images\logo.png" Folder="{site}/_catalogs/masterpage/FSJ/assets/images" Overwrite="true" />
+        <pnp:File Src="..\app\assets\images\logoCFSJ.png" Folder="{site}/_catalogs/masterpage/FSJ/assets/images" Overwrite="true" />
+
+         <!-- App Dependencies Files  -->
+         <pnp:File Src="..\node_modules\angular-material\angular-material.min.css" Folder="{site}/_catalogs/masterpage/FSJ/vendor" Overwrite="true" />
+         <pnp:File Src="..\node_modules\angular-material\angular-material.min.js" Folder="{site}/_catalogs/masterpage/FSJ/vendor" Overwrite="true" />        
+         <pnp:File Src="..\node_modules\angular-aria\angular-aria.min.js" Folder="{site}/_catalogs/masterpage/FSJ/vendor" Overwrite="true" />
+          <pnp:File Src="..\node_modules\angular-animate\angular-animate.min.js" Folder="{site}/_catalogs/masterpage/FSJ/vendor" Overwrite="true" />
+         
+      
+      </pnp:Files>     
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

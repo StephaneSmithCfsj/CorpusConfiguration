@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.3.1604.0, Culture=neutral, PublicKeyToken=3751622786b357c2" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-DF74C33FC47D4BF58FD3C9463B366460">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-DF74C33FC47D4BF58FD3C9463B366460" Version="1">
+      <pnp:Lists>
+        <pnp:ListInstance Title="LiensMDD5" Description="Liste de liens utilises par le Mega Menu" DocumentTemplate="" TemplateType="10060" Url="Lists/LiensMDD5" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="5104eafb-5d8f-444b-a101-f37dde4f0e80" ContentTypesEnabled="true">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01001944F22BAB3445088973EBAD2ED300F8" Default="true" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{AA07D33F-F41C-4C75-B518-91C0D07CAA74}" DefaultView="TRUE" Type="HTML" DisplayName="Tous les elements" Url="/rh/Lists/LiensMDD/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/images/generic.png">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="ID" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="MDDPosition" />
+                <FieldRef Name="Title" />
+                <FieldRef Name="MDDLinkHidden" />
+                <FieldRef Name="MDDLinkNewWin" />
+                <FieldRef Name="MDDDisplayDesc" />
+                <FieldRef Name="MDDLinkUrl" />
+                <FieldRef Name="FolderName" />
+                <FieldRef Name="Secteur" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field Type="Note" DisplayName="Secteur_0" StaticName="p3bbc5a70852412b8ce4033086356c69" Name="p3bbc5a70852412b8ce4033086356c69" ID="{820ff883-ffd3-4674-9e66-109d15da2218}" ShowInViewForms="FALSE" Required="FALSE" Hidden="TRUE" CanToggleHidden="TRUE" ColName="ntext2" RowOrdinal="0" Version="1" />
+            <Field Type="Text" DisplayName="FolderName" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" MaxLength="255" ID="{aee7eeb5-b1fc-4acc-a324-f254142d70c9}" SourceID="{826715f9-d847-4100-9d1e-233c095661e4}" StaticName="FolderName" Name="FolderName" ColName="nvarchar9" RowOrdinal="0" Version="1" />
+            <Field Type="TaxonomyFieldType" DisplayName="Secteur d'activite" List="{listid:TaxonomyHiddenList}" WebId="d01736bc-9d65-4a67-b27b-229152e5f601" ShowField="Path1036" Required="FALSE" EnforceUniqueValues="FALSE" ID="{93bbc5a7-0852-412b-8ce4-033086356c69}" SourceID="{826715f9-d847-4100-9d1e-233c095661e4}" StaticName="Secteur" Name="Secteur" ColName="int2" RowOrdinal="0" Version="3" Group="">
+              <Default></Default>
+              <Customization>
+                <ArrayOfProperty>
+                  <Property>
+                    <Name>SspId</Name>
+                    <Value xmlns:q1="http://www.w3.org/2001/XMLSchema" p4:type="q1:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">43c03578-842c-413e-9a87-c271df0e721d</Value>
+                  </Property>
+                  <Property>
+                    <Name>GroupId</Name>
+                  </Property>
+                  <Property>
+                    <Name>TermSetId</Name>
+                    <Value xmlns:q2="http://www.w3.org/2001/XMLSchema" p4:type="q2:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">a33c84be-88c4-4188-ba21-e78b13774e36</Value>
+                  </Property>
+                  <Property>
+                    <Name>AnchorId</Name>
+                    <Value xmlns:q3="http://www.w3.org/2001/XMLSchema" p4:type="q3:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">00000000-0000-0000-0000-000000000000</Value>
+                  </Property>
+                  <Property>
+                    <Name>UserCreated</Name>
+                    <Value xmlns:q4="http://www.w3.org/2001/XMLSchema" p4:type="q4:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+                  </Property>
+                  <Property>
+                    <Name>Open</Name>
+                    <Value xmlns:q5="http://www.w3.org/2001/XMLSchema" p4:type="q5:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+                  </Property>
+                  <Property>
+                    <Name>TextField</Name>
+                    <Value xmlns:q6="http://www.w3.org/2001/XMLSchema" p4:type="q6:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">{820ff883-ffd3-4674-9e66-109d15da2218}</Value>
+                  </Property>
+                  <Property>
+                    <Name>IsPathRendered</Name>
+                    <Value xmlns:q7="http://www.w3.org/2001/XMLSchema" p4:type="q7:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+                  </Property>
+                  <Property>
+                    <Name>IsKeyword</Name>
+                    <Value xmlns:q8="http://www.w3.org/2001/XMLSchema" p4:type="q8:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+                  </Property>
+                  <Property>
+                    <Name>TargetTemplate</Name>
+                  </Property>
+                  <Property>
+                    <Name>CreateValuesInEditForm</Name>
+                    <Value xmlns:q9="http://www.w3.org/2001/XMLSchema" p4:type="q9:boolean" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+                  </Property>
+                  <Property>
+                    <Name>FilterAssemblyStrongName</Name>
+                    <Value xmlns:q10="http://www.w3.org/2001/XMLSchema" p4:type="q10:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Value>
+                  </Property>
+                  <Property>
+                    <Name>FilterClassName</Name>
+                    <Value xmlns:q11="http://www.w3.org/2001/XMLSchema" p4:type="q11:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">Microsoft.SharePoint.Taxonomy.TaxonomyField</Value>
+                  </Property>
+                  <Property>
+                    <Name>FilterMethodName</Name>
+                    <Value xmlns:q12="http://www.w3.org/2001/XMLSchema" p4:type="q12:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">GetFilteringHtml</Value>
+                  </Property>
+                  <Property>
+                    <Name>FilterJavascriptProperty</Name>
+                    <Value xmlns:q13="http://www.w3.org/2001/XMLSchema" p4:type="q13:string" xmlns:p4="http://www.w3.org/2001/XMLSchema-instance">FilteringJavascript</Value>
+                  </Property>
+                </ArrayOfProperty>
+              </Customization>
+            </Field>
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="87106603-aa22-4608-b112-50664bede008" Name="MDDLinkUrl" DisplayName="Url" />
+            <pnp:FieldRef ID="88edddc7-83aa-41d3-8f95-ff4f2ba11092" Name="MDDLinkImage" DisplayName="Image" />
+            <pnp:FieldRef ID="ac76daa1-6583-43a7-b341-cfa54be07a32" Name="MDDCss" DisplayName="Link Css" />
+            <pnp:FieldRef ID="4506e10c-9c64-4706-b64b-0be56f0de0e9" Name="MDDPosition" DisplayName="Position" />
+            <pnp:FieldRef ID="0576722c-d54c-4a77-979b-8750d98c216f" Name="MDDDisplayDesc" DisplayName="Display Url Description" />
+            <pnp:FieldRef ID="e2da07a6-4c62-45a5-9b77-16e00943e1e2" Name="MDDLinkNewWin" DisplayName="Open link in new window" />
+            <pnp:FieldRef ID="922340b0-bf3d-4263-af26-a3dc73364f10" Name="MDDLinkHidden" DisplayName="Hidden" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

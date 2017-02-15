@@ -1,0 +1,463 @@
+/**
+ * CFSJ - June, 2016
+ * @author Negotium Technologies
+ * Masterpage
+ */
+/* line 4, ../sass/partials/_base.scss */
+html {
+  font-size: 100%;
+}
+
+/* line 9, ../sass/partials/_base.scss */
+body {
+  font-size: 75%;
+  font-family: arial;
+  line-height: 1.4;
+}
+/* line 18, ../sass/partials/_base.scss */
+.no-fontface body {
+  font-size: 1.05em;
+}
+
+/* line 23, ../sass/partials/_base.scss */
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 29, ../sass/partials/_base.scss */
+a {
+  color: #013a81;
+}
+/* line 32, ../sass/partials/_base.scss */
+a:hover {
+  text-decoration: underline;
+}
+/* line 36, ../sass/partials/_base.scss */
+a:visited {
+  color: #013a81;
+}
+/* line 40, ../sass/partials/_base.scss */
+a img.ms-asset-icon.ms-rtePosition-4 {
+  display: none;
+}
+
+/* line 45, ../sass/partials/_base.scss */
+::-moz-selection {
+  background: #FDB813;
+  text-shadow: none;
+}
+
+/* line 50, ../sass/partials/_base.scss */
+::selection {
+  background: #FDB813;
+  text-shadow: none;
+  color: #fff;
+}
+
+/* line 16, ../sass/partials/_placeholders.scss */
+.floatL {
+  float: left;
+}
+
+/* line 112, ../sass/partials/_placeholders.scss */
+.ms-qSuggest-list {
+  margin: 0;
+  padding: 0;
+}
+
+/* TOC - DESKTOP | Controls | Logo
+---------------------------------------------------
+* MAIN CONTAINER
+
+
+*/
+/* line 12, ../sass/partials/controls/_logo.scss */
+#logoCont {
+  padding: 0 25px 0 5px;
+}
+
+/* line 8, ../sass/partials/controls/_topNavBar.scss */
+.ms-core-listMenu-horizontalBox > ul.root {
+  position: relative;
+}
+/* line 11, ../sass/partials/controls/_topNavBar.scss */
+.ms-core-listMenu-horizontalBox > ul.root > li:first-child > .ms-core-listMenu-item > span {
+  padding-left: 0;
+}
+/* line 21, ../sass/partials/controls/_topNavBar.scss */
+.ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
+  font: bold 1.66em "Roboto Condensed", Arial, sans-serif;
+  text-shadow: none;
+  border: 1px solid transparent;
+  padding: 10px 0;
+  margin-right: 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 31, ../sass/partials/controls/_topNavBar.scss */
+.ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item:link, .ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item:visited {
+  color: #013a81;
+}
+/* line 36, ../sass/partials/controls/_topNavBar.scss */
+.ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item:hover {
+  text-decoration: underline;
+}
+/* line 48, ../sass/partials/controls/_topNavBar.scss */
+.ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item > span {
+  border-right: 1px solid transparent;
+  display: inline-block;
+  padding: 0 15px;
+}
+/* line 55, ../sass/partials/controls/_topNavBar.scss */
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited {
+  background-color: transparent;
+  /* [ReplaceColor(themeColor:"NavigationAccent")] */
+  color: #013a81 !important;
+}
+/* line 62, ../sass/partials/controls/_topNavBar.scss */
+.ms-core-listMenu-horizontalBox .additional-background.dynamic-children {
+  padding-right: 16px;
+  /* [RecolorImage(themeColor:"BodyText",method:"Filling")] */
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+
+/* TOC - DESKTOP | Controls | Search
+---------------------------------------------------
+* SEARCH BORDER
+* SEARCH INPUT
+* DROP DOWN
+	** Button Arrow
+	** Drop down list
+* SEARCH ICON
+
+*/
+/* line 21, ../sass/partials/controls/_search.scss */
+.ms-srch-sb-border {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: #fff;
+  border: 2px solid #666;
+  height: 50px;
+  margin: 25px 20px 0 0;
+  width: 360px;
+}
+/* line 29, ../sass/partials/controls/_search.scss */
+.ms-srch-sb-border:hover {
+  border: 2px solid #666;
+}
+/* line 34, ../sass/partials/controls/_search.scss */
+.ms-srch-sb-borderFocused {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: #fff;
+  border: 2px solid #666;
+  height: 50px;
+  margin: 25px 20px 0 0;
+  width: 360px;
+}
+
+/* line 48, ../sass/partials/controls/_search.scss */
+.ms-srch-sb > input {
+  font: normal 1.16em "Roboto", Arial, sans-serif;
+  text-shadow: none;
+  background-color: #fff;
+  color: #4d4d4d;
+  height: 46px;
+  margin: 0 0 0 15px;
+  width: 285px;
+}
+/* line 57, ../sass/partials/controls/_search.scss */
+.ms-srch-sb > input:focus {
+  border-style: none;
+  color: #4d4d4d;
+  outline-style: none;
+}
+
+/* line 72, ../sass/partials/controls/_search.scss */
+.ms-srch-sb-navLink,
+.ms-srch-sb-searchLink {
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: top;
+  background-color: transparent;
+  border: 1px solid transparent;
+  position: relative;
+  top: 12px;
+  overflow: hidden;
+}
+/* line 83, ../sass/partials/controls/_search.scss */
+.ms-srch-sb-navLink:hover,
+.ms-srch-sb-searchLink:hover {
+  /* [ReplaceColor(themeColor:"ButtonHoverBackground",opacity:"1")] */
+  background-color: #e6e6e6;
+  /* [ReplaceColor(themeColor:"ButtonHoverBackground")] */
+  background-color: #e6e6e6;
+}
+/* line 88, ../sass/partials/controls/_search.scss */
+.ms-srch-sb-navLink:active,
+.ms-srch-sb-navLink > img:active, .ms-srch-sb-navLink.ms-srch-sb-navLink-menuOpen, .ms-srch-sb-navLink.ms-srch-sb-navLink-menuOpen:hover,
+.ms-srch-sb-searchLink:active,
+.ms-srch-sb-searchLink > img:active,
+.ms-srch-sb-searchLink.ms-srch-sb-navLink-menuOpen,
+.ms-srch-sb-searchLink.ms-srch-sb-navLink-menuOpen:hover {
+  /* [ReplaceColor(themeColor:"ButtonPressedBackground",opacity:"1")] */
+  background-color: #e6e6e6;
+  /* [ReplaceColor(themeColor:"ButtonPressedBackground")] */
+  background-color: #e6e6e6;
+}
+
+/* line 101, ../sass/partials/controls/_search.scss */
+.ms-qSuggest-container {
+  background-color: #fff;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -moz-box-shadow: rgba(230, 230, 230, 0.47) 0 0 7px 0;
+  -webkit-box-shadow: rgba(230, 230, 230, 0.47) 0 0 7px 0;
+  box-shadow: rgba(230, 230, 230, 0.47) 0 0 7px 0;
+  margin: -1px 0 0 -1px;
+  padding: 5px 0;
+}
+
+/* line 115, ../sass/partials/controls/_search.scss */
+.ms-qSuggest-listItem {
+  margin: 0;
+  padding: 7px 10px;
+}
+
+/* line 122, ../sass/partials/controls/_search.scss */
+.ms-qSuggest-hListItem {
+  /* [ReplaceColor(themeColor:"HoverBackground",opacity:"1")] */
+  background-color: #e6e6e6;
+  /* [ReplaceColor(themeColor:"HoverBackground")] */
+  background-color: rgba(230, 230, 230, 0.5);
+}
+
+/* line 154, ../sass/partials/controls/_search.scss */
+.ms-srch-sb > a.ms-srch-sb-searchLink {
+  background: transparent url('images/searchIcon_25X25.png?1466178875') no-repeat 0 -3px;
+  background-size: 25px 25px;
+  margin-top: 0;
+  height: 25px;
+  width: 25px;
+}
+/* line 164, ../sass/partials/controls/_search.scss */
+.ms-srch-sb > a.ms-srch-sb-searchLink > img {
+  visibility: hidden;
+}
+
+/* line 173, ../sass/partials/controls/_search.scss */
+.ms-srch-sb-searchImg {
+  left: -35px;
+  top: -57px;
+  position: absolute;
+}
+/* line 178, ../sass/partials/controls/_search.scss */
+.ms-srch-sb-searchImg:hover {
+  left: -1px;
+  top: -69px;
+}
+
+/* line 184, ../sass/partials/controls/_search.scss */
+.ms-srch-sb-navImg {
+  left: -35px;
+  top: -35px;
+  position: absolute;
+}
+/* line 189, ../sass/partials/controls/_search.scss */
+.ms-srch-sb-navImg:hover, .ms-srch-sb-navLink-menuOpen > .ms-srch-sb-navImg {
+  left: -57px;
+  top: -35px;
+}
+
+/* line 8, ../sass/partials/wp/_webparts.scss */
+.ms-webpart-chrome-title {
+  background-color: transparent;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  margin-bottom: 0;
+}
+/* line 16, ../sass/partials/wp/_webparts.scss */
+.ms-SPZone > .s4-wpActive .ms-webpart-chrome-title, .ms-rtestate-write > .ms-rte-wpbox > div > .s4-wpActive .ms-webpart-chrome-title {
+  background-color: transparent;
+  border-bottom-width: 0;
+  border-top: 0;
+  color: #fff;
+}
+
+/* line 29, ../sass/partials/wp/_webparts.scss */
+.ms-webpart-titleText {
+  padding-left: 0px;
+  margin: 0;
+  /* Icon at the left of the title */
+}
+/* line 34, ../sass/partials/wp/_webparts.scss */
+.s4-wpcell .ms-webpart-titleText, .s4-wpActive .ms-webpart-titleText {
+  padding-left: 0px;
+}
+/* line 39, ../sass/partials/wp/_webparts.scss */
+.ms-webpart-titleText.ms-webpart-titleText, .ms-webpart-titleText > a {
+  font: 300 2.16em "Roboto", Arial, sans-serif;
+  text-shadow: none;
+  color: #013a81;
+  display: block;
+}
+/* line 47, ../sass/partials/wp/_webparts.scss */
+.ms-webpart-titleText.ms-webpart-titleText-withMenu {
+  color: #013a81;
+}
+/* line 51, ../sass/partials/wp/_webparts.scss */
+.ms-SPZone > .s4-wpActive .ms-webpart-titleText.ms-webpart-titleText-withMenu, .ms-rtestate-write > .ms-rte-wpbox > div > .s4-wpActive .ms-webpart-titleText.ms-webpart-titleText-withMenu {
+  color: #013a81;
+}
+/* line 56, ../sass/partials/wp/_webparts.scss */
+.ms-webpart-titleText > a:link, .ms-webpart-titleText > a:visited, .ms-webpart-titleText > a:hover {
+  /* [ReplaceColor(themeColor:"CommandLinksHover")] */
+  color: #013a81;
+  text-decoration: none;
+}
+/* line 63, ../sass/partials/wp/_webparts.scss */
+.ms-webpart-titleText > a:active {
+  /* [ReplaceColor(themeColor:"CommandLinksPressed")] */
+  color: #013a81;
+}
+
+/* line 50, ../sass/app.scss */
+#s4-workspace {
+  background-color: #f2f2f2;
+}
+
+/* line 58, ../sass/app.scss */
+.menu {
+  background-color: transparent;
+  border: none;
+  height: 38px;
+  margin: 16px;
+  width: 36px;
+}
+
+/* line 68, ../sass/app.scss */
+md-toolbar h1 {
+  font-size: 1.250em;
+  font-weight: 400;
+}
+/* line 73, ../sass/app.scss */
+md-toolbar h3 {
+  margin: auto;
+  font-weight: 500;
+}
+
+/* line 84, ../sass/app.scss */
+md-list-item > button {
+  width: 100%;
+  text-align: left !important;
+}
+
+/* line 90, ../sass/app.scss */
+md-list .md-button.selected {
+  color: #03a9f4;
+}
+
+/* line 95, ../sass/app.scss */
+md-sidenav md-list {
+  padding: 0px 0px 8px 0px;
+}
+
+/* line 103, ../sass/app.scss */
+#content {
+  overflow: hidden;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 5px;
+}
+/* line 109, ../sass/app.scss */
+#content .md-button.share {
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  height: 48px;
+  margin: 8px auto 16px 0;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+}
+/* line 119, ../sass/app.scss */
+#content .md-button.share > md-icon {
+  fill: black;
+  width: 36px;
+  height: 36px;
+}
+/* line 125, ../sass/app.scss */
+#content .md-button.share:active > md-icon {
+  background-color: #dadada;
+  border-radius: 75%;
+  padding: 4px;
+  transition: all 100ms ease-out 30ms;
+}
+/* line 134, ../sass/app.scss */
+#content md-icon.avatar {
+  margin-top: 10px;
+}
+/* line 138, ../sass/app.scss */
+#content img {
+  display: block;
+  height: auto;
+  max-width: 500px;
+}
+
+/* line 145, ../sass/app.scss */
+md-button.menuBtn > md-icon {
+  fill: white;
+  width: 24px;
+  height: 24px;
+}
+
+/* line 155, ../sass/app.scss */
+.content-wrapper {
+  position: relative;
+}
+
+/* line 162, ../sass/app.scss */
+.avatar {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0px;
+  vertical-align: middle;
+  zoom: 0.70;
+  transform: translateZ(0);
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+}
+
+/* line 179, ../sass/app.scss */
+md-bottom-sheet md-icon {
+  margin-right: 20px;
+}
+
+/* line 184, ../sass/app.scss */
+span.name {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-left: 5px;
+}
+
+/* line 193, ../sass/app.scss */
+#s4-titlerow {
+  height: 105px;
+  padding-top: 0;
+}

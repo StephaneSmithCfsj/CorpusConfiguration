@@ -1,0 +1,42 @@
+﻿<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Microsoft.Office.Server.Search.WebControls.RefinementScriptWebPart, Microsoft.Office.Server.Search, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+      <importErrorMessage>Impossible d'importer ce composant WebPart.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="HelpUrl" type="string" />
+        <property name="UseManagedNavigationRefiners" type="bool">False</property>
+        <property name="TitleUrl" type="string" />
+        <property name="Hidden" type="bool">False</property>
+        <property name="ChromeType" type="chrometype">None</property>
+        <property name="AllowClose" type="bool">True</property>
+        <property name="TitleIconImageUrl" type="string" />
+        <property name="AllowMinimize" type="bool">True</property>
+        <property name="AllowEdit" type="bool">True</property>
+        <property name="Direction" type="direction">NotSet</property>
+        <property name="Height" type="string" />
+        <property name="AllowConnect" type="bool">True</property>
+        <property name="MissingAssembly" type="string">Impossible d'importer ce composant WebPart.</property>
+        <property name="AllowHide" type="bool">True</property>
+        <property name="Description" type="string">Ce composant WebPart permet aux utilisateurs d’affiner les résultats de la recherche de personnes</property>
+        <property name="StatesJson" type="string">{}</property>
+        <property name="QueryGroupName" type="string">Default</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="ExportMode" type="exportmode">All</property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="RenderTemplateId" type="string">~sitecollection/_catalogs/masterpage/Display Templates/Filters/Control_Refinement.js</property>
+        <property name="CatalogIconImageUrl" type="string" />
+        <property name="EmitStyleReference" type="bool">True</property>
+        <property name="HelpMode" type="helpmode">Modeless</property>
+        <property name="Title" type="string">Perfectionnement</property>
+        <property name="AlternateErrorMessage" type="string" null="true" />
+        <property name="Width" type="string" />
+        <property name="EmptyMessage" type="string" />
+        <property name="ServerIncludeScriptsJson" type="string">null</property>
+        <property name="SelectedRefinementControlsJson" type="string">{"refinerConfigurations":[{"propertyName":"Department","type":"Text","sortOrder":0,"displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Filter_Default.js","sortBy":0,"deepHits":100000,"maxNumberRefinementOptions":15,"displayName":"","useDefaultDateIntervals":false,"refinerSpecStringOverride":"","aliases":["urn:schemas-microsoft-com:sharepoint:portal:profile:Department"],"intervals":null},{"propertyName":"JobTitle","type":"Text","sortOrder":1,"displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Filter_Default.js","sortBy":1,"deepHits":100000,"maxNumberRefinementOptions":15,"displayName":"","useDefaultDateIntervals":false,"aliases":["urn:schemas-microsoft-com:sharepoint:portal:profile:Title"],"refinerSpecStringOverride":"","intervals":null}]}</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
